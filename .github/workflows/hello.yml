@@ -3,23 +3,14 @@ name: Learn basic of GitHub Action
 on:
   push:
     branches:
-      -  main
+      - main
 
 jobs:
   helloworld:
     runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
 
     steps:
-      - name: print hellow
-        run: cat /etc/os/os-release
-      - name: print challo
-        run: echo "challo world !!"
-
-  challoworld:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: print hellow
-        run: echo "hello world !!"
-      - name: print challo
-        run: echo "challo world !!"
+      - name: print hello
+        run: cat /etc/os-release
