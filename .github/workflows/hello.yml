@@ -6,7 +6,7 @@ on:
       -  main
 
 jobs:
-  hello.yml:
+  helloworld:
     runs-on: ubuntu-latest
 
     steps:
