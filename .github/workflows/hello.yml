@@ -16,4 +16,11 @@ jobs:
         run: |
          apk add --no-cache $JDK_VERSION
          java --version
+
+  print-env: 
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: print Enviroment Varaible value
+         run: echo JDK_VERSION
       
