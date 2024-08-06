@@ -27,4 +27,11 @@ jobs:
      steps:
        - name: print Enviroment Varaible value
          run: echo $JDK_VERSION
+
+  print-env-acorss-file: 
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: Access Enviromental varible acorss file
+         run: echo $MAVEN_VERSION
       
