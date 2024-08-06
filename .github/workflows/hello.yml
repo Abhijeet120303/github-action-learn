@@ -22,5 +22,5 @@ jobs:
 
      steps:
        - name: print Enviroment Varaible value
-         run: echo JDK_VERSION
+         run: echo $JDK_VERSION
       
